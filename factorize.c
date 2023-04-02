@@ -4,23 +4,23 @@
  * factorize - The function factorize a number
  * @buffer: pointer to the address of the number
  *
- * Author: Justin Nwanze
+ * Author: Thaoban Abdrasheed
  * Return: int
  */
 int factorize(char *buffer)
 {
 
-	u_int32_t num_str;
-	u_int32_t itr;
+	u_int32_t num;
+	u_int32_t i;
 
-	num_str = atoi(buffer);
+	num = atoi(buffer);
 
 
-	for (itr = 2; itr < num_str; itr++)
+	for (i = 2; i < num; i++)
 	{
-		if (num_str % itr == 0)
+		if (num % i == 0)
 		{
-			printf("%d=%d*%d\n",num_str,num_str/itr,itr);
+			printf("%d=%d*%d\n",num,num/i,i);
 			break;
 		}
 	}
